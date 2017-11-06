@@ -340,10 +340,6 @@ footer{
   color: #fff;
   padding-top: 20px;
   
-  h1{
-     margin: 0;
-     padding: 0;
-  }
  
   @media (max-width: 550px) {
 
@@ -471,12 +467,22 @@ footer{
 }
 // footer
 
+////////////////////ヘッダーのロゴ画像//////////////////////// 
+h1{
+  margin: 0;
+  padding: 0;
+}
+
 
 
 ////////////////////カバーエリア(news.html、company.html共通）////////////////////////
 #sub_cover{
 
-  padding:80px 0;
+  padding:40px 0;
+  
+    @media(min-width: 550px){
+      padding:80px 0;
+    }
   
   h2{
     text-align: center;
@@ -515,13 +521,17 @@ footer{
   }
   
     #main{
+      
+      @media(min-width:550px){
+        padding-right:20px;
+      }
   
       h2{
         color: $blue1;
         border-bottom:3px solid $blue1;
         @include fontsize(15);
         font-weight: bold;
-        padding-bottom:15px;
+        padding-bottom:20px;
          
          &.company_title{
            margin-bottom: 0px;
